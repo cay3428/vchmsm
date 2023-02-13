@@ -1,0 +1,82 @@
+<div class="content">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header"><h5 class="title">Ürün ekle</h5></div>
+            <div class="card-body">
+                <form [formGroup]="userAddForm">
+                  
+                  
+                    <div class="mb-3">
+                        <label for="id">Kulalnıcı İd'si</label>
+                        <div class="form-group">
+                            <input type="number" 
+                            id="id" 
+                            formControlName="id" class="form-control" 
+                            placeholder="id"/>
+                        </div>
+                    </div>
+                  
+                  
+                  
+                  
+          
+ 
+                  
+                    <div class="mb-3">
+                        <label for="email">E-posta adresi</label>
+                        <div class="form-group">
+                            <input type="text" 
+                            id="email" 
+                            formControlName="email" class="form-control" 
+                            placeholder="E-posta adresi"/>
+                        </div>
+                    </div>
+                   
+
+
+                    <div class="mb-3">
+                        <label for="password">Şifre</label>
+                        <div class="form-group">
+                            <input type="text" 
+                            id="password" 
+                            formControlName="password" class="form-control" 
+                            placeholder="Şifre"/>
+                        </div>
+                    </div>
+
+ 
+
+                    <div  class="mb-3">
+                        <label for="firstName">Adı</label>
+                        <div class="form-group">
+                            <input type="text" 
+                            id="firstName" 
+                            formControlName="firstName" class="form-control" 
+                            placeholder="Adı"/>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div  class="mb-3">
+                        <label for="lastName">Soyadı</label>
+                        <div class="form-group">
+                            <input type="text" 
+                            id="lastName" 
+                            formControlName="lastName" class="form-control" 
+                            placeholder="Soyadı"/>
+                        </div>
+                    </div>
+                    
+
+                    
+                </form>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-fill btn-primary" (click)="add()">Ekle</button>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>

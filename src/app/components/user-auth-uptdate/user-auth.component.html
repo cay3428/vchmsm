@@ -1,0 +1,65 @@
+<div class="container m-2 p-2" style="background-color: rgb(62, 92, 9)">
+    <div class="col-md-12">
+      <div
+        class="card"
+        style="
+          background-color: rgb(255, 96, 22);
+          color: rgb(59, 219, 219);
+          font-size: 20px;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+            'Lucida Sans', Arial, sans-serif;
+        "
+      >
+        <div class="card-header">
+         
+        </div>
+        <div class="card-body">
+          <form [formGroup]="editProfileForm">
+            <div class="mb-3 row">
+              <label for="Id" class="col-sm-2 col-form-label">Id</label>
+              <div class="col-sm-10">
+                <input
+                  type="number "
+                  id="Id"
+                  formControlName="Id"
+              
+                  class="form-control"
+                  placeholder="Id'numaranız"
+                                  />
+              </div>
+            </div>
+  
+           
+  
+              <div class="mb-3 row">
+                <label for="OperationClaimId" class="col-sm-2 col-form-label">Yetki Id'si</label>
+                <div class="col-sm-10">
+                  <input
+                    type="number "
+                    id="OperationClaimId"
+                    formControlName="OperationClaimId"
+                
+                    class="form-control"
+                    placeholder="Yetki Id"
+
+                  />
+                </div>
+              </div>
+              
+
+
+        
+
+
+
+   
+        <div class="card-footer" style="background-color: rgb(4, 62, 255)">
+          <button
+            class="btn btn-lg btn-outline-success float-end"
+            (click)="editProfile()"
+          >
+            Bilgilerimi güncelle
+          </button>
+        </div>
+    
+  

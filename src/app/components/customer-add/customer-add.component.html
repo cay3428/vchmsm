@@ -1,0 +1,156 @@
+<div class="content">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header"><h5 class="title">Ürün ekle</h5></div>
+            <div class="card-body">
+                <form [formGroup]="customerAddForm">
+                  
+                  
+                    <div class="mb-3">
+                        <label for="customerId">Müşteri Id'si</label>
+                        <div class="form-group">
+                            <input type="number" 
+                            id="customerId" 
+                            formControlName="customerId" class="form-control" 
+                            placeholder="customerId"/>
+                        </div>
+                    </div>
+                  
+      
+                  
+                    <div class="mb-3">
+                        <label for="customerName">Müşteri Adı </label>
+                        <div class="form-group">
+                            <input type="text" 
+                            id="customerName" 
+                            formControlName="customerName" class="form-control" 
+                            placeholder="customerName"/>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <label for="companyName"> Şirket Adı</label>
+                        <div class="form-group">
+                            <input type="text" 
+                            id="companyName" 
+                            formControlName="companyName" class="form-control" 
+                            placeholder="companyName"/>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="mb-3">
+                        <label for="city">Şehir </label>
+                        <div class="form-group">
+                            <input type="text" 
+                            id="city" 
+                            formControlName="city" class="form-control" 
+                            placeholder="city"/>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <label for="region">Bölge </label>
+                        <div class="form-group">
+                            <input type="text" 
+                            id="region" 
+                            formControlName="region" class="form-control" 
+                            placeholder="region"/>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="contatcTitle">Bağlantı </label>
+                        <div class="form-group">
+                            <input type="text" 
+                            id="contatcTitle" 
+                            formControlName="contatcTitle" class="form-control" 
+                            placeholder="contatcTitle"/>
+                        </div>
+                    </div>
+
+
+ 
+                    <div class="mb-3">
+                        <label for="address">Adresi </label>
+                        <div class="form-group">
+                            <input type="text" 
+                            id="address" 
+                            formControlName="address" class="form-control" 
+                            placeholder="address"/>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="email">Elektronik Posta </label>
+                        <div class="form-group">
+                            <input type="email" 
+                            id="email" 
+                            formControlName="email" class="form-control" 
+                            placeholder="email"/>
+                        </div>
+                    </div>
+
+                    
+                    <div class="mb-3">
+                        <label for="country"> Ülke</label>
+                        <div class="form-group">
+                            <input type="text" 
+                            id="country" 
+                            formControlName="country" class="form-control" 
+                            placeholder="country"/>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="phone">Telefon</label>
+                        <div class="form-group">
+                            <input type="number" 
+                            id="phone" 
+                            formControlName="phone" class="form-control" 
+                            placeholder="phone"/>
+                        </div>
+                    </div>
+
+
+
+                    
+                    <div class="mb-3">
+                        <label for="fax">Fax </label>
+                        <div class="form-group">
+                            <input type="number" 
+                            id="fax" 
+                            formControlName="fax" class="form-control" 
+                            placeholder="fax"/>
+                        </div>
+                    </div>
+
+                    
+                   
+
+ 
+ 
+      
+
+
+
+
+                            </form>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-fill btn-primary" (click)="add()">Ekle</button>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>

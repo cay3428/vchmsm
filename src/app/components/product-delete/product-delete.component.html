@@ -1,0 +1,33 @@
+ 
+   
+        <div class="card">
+            <div class="card-header"><h5 class="title">Ürün Sil</h5></div>
+            <div class="card-body">
+       
+              <form [formGroup]="deleteProductForm">
+              
+              <div class="mb-3">
+                <label for="productId">ÜrünId'si</label>
+                <div class="form-group">
+                    <input type="number" 
+                    id="productId" 
+                    formControlName="productId" class="form-control" 
+                    placeholder="productId"/>
+                </div>
+                <div class="card-footer" style="background-color: rgb(4, 62, 255)">
+                  <button
+                    class="btn btn-lg btn-outline-success float-end"
+                 
+                    (click)="delete()"
+
+                  >
+                  
+                 Delete
+                  
+                  </button>
+                </div>
+             
+
+
+
+            
